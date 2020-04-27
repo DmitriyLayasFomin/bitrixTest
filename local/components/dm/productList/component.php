@@ -1,5 +1,6 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-
+require_once( $_SERVER['DOCUMENT_ROOT'] . "/local/devCore/classes/IBlockWorker.php" );
+if (CModule::IncludeModule('iblock')) { 
 function productList(){
     $worker = new IBlockWorker();
     $result;
@@ -20,4 +21,5 @@ function productList(){
 }
 $arResult = productList();
 $this->IncludeComponentTemplate();
+}
 ?>

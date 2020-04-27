@@ -14,6 +14,7 @@
                 $product['availability'] == true ? $availability = ['text'=>'Есть', 'value'=>'true'] : $availability = ['text'=>'Нет', 'value'=>'false'];
                 $card == false ? $incard = ['text'=>'В корзину', 'value'=>''] : $incard = ['text'=>'Убрать', 'value'=>'incard'];
                 
+                
                 ?>
 
                 <div class="wrapper col-12 col-sm-7 col-md-6 col-lg-4 px-4">
